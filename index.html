@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Title</h1>
+<p id="demo">******</p>
+
+<script>
+document.getElementById("demo").value = "R";
+function Test_01(){
+	var X = document.getElementById("demo");
+    var Y = X.style.marginLeft;
+    Y = Y.slice(0,Y.length-2);
+    if ( Y >= 100 ){
+    	X.value = "L";
+    } else if ( Y <= 0 ){
+    	X.value = "R";
+    }
+    Z = X.value;
+    if (Z=="R"){
+    	Y = Number(Y)+5;
+    } else if (Z=="L"){
+    	Y = Number(Y)-5;
+    }
+    Y+="px";
+    X.style.marginLeft = Y;
+}
+setInterval(Test_01, 20);
+</script>
+
+</body>
+</html>
