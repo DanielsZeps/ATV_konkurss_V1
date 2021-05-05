@@ -4,6 +4,8 @@
 		<title>
 			Sup!!!
 		</title>
+		<link rel="stylesheet" href="assets/style/default.css" />
+		<script src="assets/script/elements.js"></script>
 	</head>
 	<body>
 
@@ -11,35 +13,6 @@
 		<p id="demo">******</p>
 		<h1>audf</h1>
 	</body>
-	<script>
-		document.getElementById("demo").value = "R";
-		function Test_01(){
-			var X = document.getElementById("demo");
-			var Y = X.style.marginLeft;
-			Y = Y.slice(0,Y.length-2);
-			if ( Y >= 100 ){
-				X.value = "L";
-			} else if ( Y <= 0 ){
-				X.value = "R";
-			}
-			Z = X.value;
-			if (Z=="R"){
-				Y = Number(Y)+5;
-			} else if (Z=="L"){
-				Y = Number(Y)-5;
-			}
-			Y+="px";
-			X.style.marginLeft = Y;
-		}
-		setInterval(Test_01, 20);
-		var xhttp = new XMLHttpRequest();
-		xhttp.onreadystatechange = function() {
-			if (this.readyState == 4 && this.status == 200) {
-				console.log(this.responseText);
-			}
-		};
-		xhttp.open("GET", "README.md", true);
-		xhttp.send();
-	</script>
+	<script src="assets/script/onload.css"></script>
 </html>
 
