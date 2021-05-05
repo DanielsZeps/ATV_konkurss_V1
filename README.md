@@ -1,3 +1,3 @@
 # ATV_konkurss_V1
 
-#Linkus pievienošu šeit
+#Links 1: https://danielszeps.github.io/ATV_konkurss_V1/
