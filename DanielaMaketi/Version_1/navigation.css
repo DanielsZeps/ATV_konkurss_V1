@@ -1,0 +1,65 @@
+#navigation {
+    background: #4CFF4C;
+    outline: solid #228b22 2px;
+}
+#navigation > span {
+    border-right: solid #1CFF1C 3px;
+    background: #ACFFAC;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    width: 10%;
+}
+#navigation > span:last-child {
+    border-left: solid #1CFF1C 3px;
+    border-right: none;
+    float: right;
+}
+#navigation > span:hover {
+    background: #7CFF7C;
+}
+#navigation > span:nth-child(2) > div {
+    transition: left 2s;
+    margin-top: 7px;
+    position: absolute;
+    left: -300;
+    min-width: 300px;
+    max-width: 100%;
+    background-color: #000000;
+    overflow-y: scroll;
+    max-height: 90%;
+}
+#navigation > span:nth-child(2) > div > div {
+    border-bottom: solid #2e814e 2px;
+    background: #97f397;
+    padding: 4%;
+}
+#navigation > span:nth-child(2) > div > div:hover {
+    background: #457a45;
+}
+#navigation > span:nth-child(2):hover > div {
+    left: 0;
+}
+
+#navigation > span:last-child > div {
+    visibility: hidden;
+    margin-top: 7px;
+    opacity: 0;
+    transition: opacity 2s;
+    position: absolute;
+    width: inherit;
+    background-color: #000000;
+    float: left;
+}
+#navigation > span:last-child > div > div {
+    border-bottom: solid #2e814e 2px;
+    background: #97f397;
+    padding: 4%;
+}
+#navigation > span:last-child > div > div:hover {
+    background: #457a45;
+}
+#navigation > span:last-child:hover > div {
+    visibility: visible;
+    opacity: 1;
+}
